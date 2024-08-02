@@ -1,0 +1,12 @@
+2024-07-30 23:49:45.227698-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "EMPLEADO" not found (this database is empty); SQL statement:
+insert into empleado (apellido,celular,deleted,genero,nombre,rol_id,tutor_id,id) values (?,?,?,?,?,?,?,default) [42104-224]
+2024-07-30 23:50:34.270079-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ROL" not found (this database is empty); SQL statement:
+INSERT INTO rol (nombre, deleted) VALUES ('Supervisor', FALSE) [42104-224]
+2024-07-30 23:50:47.487981-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ROL" not found (this database is empty); SQL statement:
+INSERT INTO ROL (nombre, deleted) VALUES ('Supervisor', FALSE) [42104-224]
+2024-07-30 23:50:48.261067-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ROL" not found (this database is empty); SQL statement:
+INSERT INTO ROL (nombre, deleted) VALUES ('Supervisor', FALSE) [42104-224]

@@ -1,0 +1,162 @@
+{
+	"info": {
+		"_postman_id": "bef5f319-ca3b-4b62-9429-a9623afda1a9",
+		"name": "Tienda_test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28783371",
+		"_collection_link": "https://lunar-meteor-504966.postman.co/workspace/New-Team-Workspace~81a46300-4f26-411d-b6bf-8e8ab185ad07/collection/28783371-bef5f319-ca3b-4b62-9429-a9623afda1a9?action=share&source=collection_link&creator=28783371"
+	},
+	"item": [
+		{
+			"name": "Empleados",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Carlos\",\r\n    \"apellido\": \"Martínez\",\r\n    \"celular\": \"321654987\",\r\n    \"genero\": \"Masculino\",\r\n    \"deleted\": false,\r\n    \"rol\": {\r\n        \"id\": 1  // Asegúrate de usar el ID del rol 'Supervisor' que tienes en tu base de datos\r\n    },\r\n    \"tutor\": null  // Esto indica que el empleado no tiene tutor y es un supervisor\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/empleados/crear",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"empleados",
+								"crear"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Carla\",\r\n    \"apellido\": \"Cetenar\",\r\n    \"celular\": \"222999\",\r\n    \"genero\": \"Femenino\",\r\n    \"deleted\": false,\r\n    \"rol\": {\r\n        \"id\": 1\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/empleados/editar/18",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"empleados",
+								"editar",
+								"18"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/empleados/editar/18",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Carla\",\r\n    \"apellido\": \"ovelar\",\r\n    \"celular\": \"222999\",\r\n    \"genero\": \"Femenino\",\r\n    \"deleted\": false,\r\n    \"rol\": {\r\n        \"id\": 2\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/empleados/editar/18",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"empleados",
+								"editar",
+								"18"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/empleados/borrar/19",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/empleados/borrar/19",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"empleados",
+								"borrar",
+								"19"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tarea",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/tareas/traer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/tareas/traer",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"tareas",
+								"traer"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

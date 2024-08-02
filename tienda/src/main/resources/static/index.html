@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Empleados</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <input type="text" id="search" placeholder="Buscar...">
+            <div class="form-group">
+                <div class="column-titles">
+                    <div class="column" id="nombreTitle">Nombre</div>
+                    <div class="column" id="apellidoTitle">Apellido</div>
+                </div>
+            </div>
+            <ul id="employeeList">
+                <!-- Lista de empleados -->
+            </ul>
+        </div>
+        <div class="main">
+            <h2>Datos Personales</h2>
+            <form id="employeeForm">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido" name="apellido" required>
+                </div>
+                <div class="form-group">
+                    <label for="celular">Celular</label>
+                    <input type="text" id="celular" name="celular">
+                </div>
+                <div class="form-group">
+                    <label for="genero">Género</label>
+                    <select id="genero" name="genero" required>
+                        <option value="femenino">Femenino</option>
+                        <option value="masculino">Masculino</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="tutor">Tutor</label>
+                    <div class="tutor-options">
+                        <input type="checkbox" id="tutorSi" name="tutorOption" value="si">
+                        <label for="tutorSi">Sí</label>
+                        <select id="tutorQuien" name="tutorQuien" disabled>
+                            <!-- Opciones de supervisores se llenarán con JavaScript -->
+                        </select>
+                    </div>
+                </div>
+
+                <button type="submit" id="saveBtn">Guardar</button>
+            </form>
+                <div class="tasks">
+                    <h3>Tareas</h3>
+                    <div class="task-category">
+                        <h4>Pc escritorio</h4>
+                        <div class="task-row">
+                            <div class="task-item">
+                                <input type="checkbox" id="tarea1" name="tareas" value="tarea1">
+                                <label for="tarea1">Formateo e instalación de SO</label>
+                            </div>
+                            <div class="task-item">
+                                <input type="checkbox" id="tarea2" name="tareas" value="tarea2">
+                                <label for="tarea2">Limpieza física</label>
+                            </div>
+                            <div class="task-item">
+                                <input type="checkbox" id="tarea3" name="tareas" value="tarea3">
+                                <label for="tarea3">Desinfección de virus</label>
+                            </div>
+                            <div class="task-item">
+                                <input type="checkbox" id="tarea4" name="tareas" value="tarea4">
+                                <label for="tarea4">Diagnosticar</label>
+                            </div>
+                            <div class="task-item">
+                                <input type="checkbox" id="tarea5" name="tareas" value="tarea5">
+                                <label for="tarea5">Cambio de partes</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="task-category">
+                        <h4>Notebook</h4>
+                        <div class="task-row">
+                            <div class="task-item">
+                                <input type="checkbox" id="tarea6" name="tareas" value="tarea6">
+                                <label for="tarea6">Formateo e instalación de SO</label>
+                            </div>
+                            <div class="task-item">
+                                <input type="checkbox" id="tarea7" name="tareas" value="tarea7">
+                                <label for="tarea7">Limpieza física</label>
+                            </div>
+                            <div class="task-item">
+                                <input type="checkbox" id="tarea8" name="tareas" value="tarea8">
+                                <label for="tarea8">Desinfección de virus</label>
+                            </div>
+                            <div class="task-item">
+                                <input type="checkbox" id="tarea9" name="tareas" value="tarea9">
+                                <label for="tarea9">Diagnosticar</label>
+                            </div>
+                            <div class="task-item">
+                                <input type="checkbox" id="tarea10" name="tareas" value="tarea10">
+                                <label for="tarea10">Cambio de partes</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="task-category">
+                        <h4>Celulares</h4>
+                        <div class="task-row">
+                            <div class="task-item">
+                                <input type="checkbox" id="tarea11" name="tareas" value="tarea11">
+                                <label for="tarea11">Flasheo</label>
+                            </div>
+                            <div class="task-item">
+                                <input type="checkbox" id="tarea12" name="tareas" value="tarea12">
+                                <label for="tarea12">Cambio de bateria</label>
+                            </div>
+                            <div class="task-item">
+                                <input type="checkbox" id="tarea13" name="tareas" value="tarea13">
+                                <label for="tarea13">Cambio de pantalla</label>
+                            </div>
+                            <div class="task-item">
+                                <input type="checkbox" id="tarea14" name="tareas" value="tarea14">
+                                <label for="tarea14">Cambio de vidrio templado</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="task-category">
+                        <h4>Atención al público</h4>
+                        <div class="task-row">
+                            <div class="task-item">
+                                <input type="checkbox" id="tarea15" name="tareas" value="tarea15">
+                                <label for="tarea15">Recibir nuevos clientes</label>
+                            </div>
+                            <div class="task-item">
+                                <input type="checkbox" id="tarea16" name="tareas" value="tarea16">
+                                <label for="tarea16">Presupuesto de equipos</label>
+                            </div>
+                            <div class="task-item">
+                                <input type="checkbox" id="tarea17" name="tareas" value="tarea17">
+                                <label for="tarea17">Venta de equipos</label>
+                            </div>
+                            <div class="task-item">
+                                <input type="checkbox" id="tarea18" name="tareas" value="tarea18">
+                                <label for="tarea18">Compra a proveedores</label>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Añadir más categorías y tareas según sea necesario -->
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
+

@@ -1,0 +1,135 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 140vh;
+    background-color: #f5f5f5;
+    margin: 0;
+    zoom: 0.8; /* Ajusta el zoom para reducir el tamaño de todo el contenido */
+}
+
+.container {
+    display: flex;
+    width: 90%; /* Aumenta el ancho para adaptarse al zoom */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Reduce la sombra */
+    background-color: white;
+}
+
+.sidebar {
+    width: 25%; /* Reduce el ancho de la barra lateral */
+    padding: 10px; /* Reduce el padding */
+    background-color: #f0f0f0;
+}
+
+.sidebar input, .sidebar button {
+    width: 90%;
+    padding: 8px; /* Reduce el padding de los botones y entradas */
+    margin-bottom: 12px; /* Reduce el margen inferior */
+}
+
+.main {
+    width: 75%; /* Reduce el ancho principal */
+    padding: 10px; /* Reduce el padding */
+}
+
+.main h2 {
+    margin-top: 0;
+    font-size: 1.2em; /* Ajusta el tamaño del título */
+}
+
+/* Contenedor de las columnas de títulos */
+.column-titles {
+    display: flex;
+    justify-content: center; /* Centra las columnas horizontalmente */
+    margin: 10px 0; /* Espacio arriba y abajo de las columnas */
+}
+
+/* Estilo para cada columna */
+.column {
+    flex: 1; /* Hace que las columnas ocupen el mismo espacio */
+    padding: 8px;
+    background-color: #f0f0f0; /* Fondo de las columnas */
+    border: 1px solid #ccc; /* Borde de las columnas */
+    text-align: center; /* Centra el texto dentro de la columna */
+    font-weight: bold;
+    border-radius: 5px; /* Bordes redondeados */
+    margin: 0 5px; /* Espacio entre las columnas */
+}
+
+/* Opcional: Asegúrate de que el contenedor tenga un ancho adecuado */
+.sidebar {
+    width: 300px; /* Ajusta el ancho según sea necesario */
+}
+
+
+.main form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Reduce el espacio entre los elementos del formulario */
+}
+
+.form-group {
+    flex: 1 1 calc(50% - 10px); /* Ajusta el tamaño de los grupos de formulario */
+}
+
+.main form label, .main form input, .main form select, .main form button {
+    width: 100%;
+    padding: 8px; /* Reduce el padding */
+    margin-bottom: 8px; /* Reduce el margen inferior */
+}
+
+.tutor-options {
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos al centro */
+    gap: 8px; /* Espacio entre los elementos */
+}
+
+.tutor-options input[type="checkbox"] {
+    margin-right: 5px; /* Espacio a la derecha de los checkboxes */
+}
+
+.tutor-options label {
+    margin-right: 150px; /* Espacio entre los labels y el input de texto */
+}
+
+.tutor-options input[type="text"] {
+    width: 300px; /* Ajusta el ancho del input */
+    margin-left: 20px; /* Espacio a la izquierda del input */
+}
+
+
+.tasks {
+    margin-top: 10px; /* Reduce el margen superior */
+}
+
+.tasks h3 {
+    margin-bottom: 8px; /* Reduce el margen inferior */
+}
+
+.task-category {
+    margin-bottom: 15px; /* Reduce el margen inferior */
+}
+
+.task-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px; /* Reduce el espacio entre las tareas */
+}
+
+.task-item {
+    flex: 1 1 calc(20% - 5px); /* Ajusta el tamaño de los ítems de tarea */
+    display: flex;
+    align-items: center;
+}
+
+.task-item label {
+    margin-left: 3px; /* Reduce el margen izquierdo */
+}
+
+.task-item input[type="checkbox"] {
+    width: auto;
+    margin-right: 3px; /* Reduce el margen derecho */
+}
